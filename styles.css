@@ -14,19 +14,19 @@ h1{
     background-color: rgb(217,217,217);
     color: rgb(246,202,172);
     text-align: center;
-    height: 100px;
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     -webkit-text-stroke: 2px orange;
     text-shadow: 20px 10px 15px rgba(0, 0, 0, 0.568);
     letter-spacing: 15px;
+    width: 100%;
 }
 
 img{
-    height: 100px;
-    border: solid 25px black;
-    width: 120px;
+    height: 75%;
+    border: solid 20px black;
+    width: 75%;
 }
 
 #Salta{
@@ -57,17 +57,42 @@ img{
     height: 100%;
     width: 10%;
     display: flex;
+
 }
+.check > input{
+    margin: auto;
+
+}
+
+.checksPens{
+    background-color: #f7caac;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.listas{
+    width: 25%;
+    display: flex;
+}
+
 
 .pensiones{
     background-color: #f7caac;
+    margin: auto;
 }
 
 .provincia{
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
-    width: 20%;
+    width: 40%;
     display: flex;
+    flex-direction: column;
+}
+
+
+.imagen{
+    width: 15%;
 }
 
 .provincia > p{
@@ -75,20 +100,24 @@ img{
 }
 
 .formItem{
-    padding: 1%;
-    display: flex;
-
+    width: 100%;
+    text-align: center;
 }
 
-.formItem > p{
-    padding-right: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.nombre{
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: row;
+}
+
+#pago{
+    width: 100%;
 }
 
 textarea{
     border: solid 1px #87ba64;
     height: 20px;
+    width: 15%;
 }
 
 .submit{
@@ -97,15 +126,16 @@ textarea{
     color: white;
     border-radius: 5px;
     height: 35px;
-    width: 100px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    display: flex;
 }
 
 #form{
+    padding-top: 1%;
     padding-bottom: 1%;
     border-bottom: solid 2px black;
     border-left: solid 2px black;
     border-right: solid 2px black;
+    width: 100%;
 }
