@@ -120,6 +120,11 @@ textarea{
     width: 15%;
 }
 
+.pagos{
+    display: flex;
+    flex-direction: row;
+}
+
 .submit{
     margin: auto;
     background-color: black;
