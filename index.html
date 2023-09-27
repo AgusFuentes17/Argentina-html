@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <h1>ARGENTINA</h1>
-        <form>
+        <form action="mailto:garcia.nicolaset36@gmail.com" method="post">
                 <div id="Salta">      
-                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="radio" id="Salta" name="provincia" required></div>
                         <div class="provincia"><p>SALTA</p></div>
-                        <div><img src="salta.jpg"></div>
-                        <div><ul><li>1⁄2 pensión c/ aéreo</li><input type="checkbox" class="pensiones"><li>1⁄2 pensión c/ bus</li><input type="checkbox" class="pensiones"><li>Desayuno s/ traslados</li><input type="checkbox" class="pensiones"></ul></div>
+                        <div class="imagen"><img src="salta.jpg"></div>
+                        <div class="listas"><ul><li>1⁄2 pensión c/ aéreo</li><br><li>1⁄2 pensión c/ bus</li><br><li>Desayuno s/ traslados</li></ul></div>
+                        <div class="checksPens"><input type="radio" class="pensiones" name="pensiones" id="medioS" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="busS" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="desayunoS" required></div>
                 </div>
                 <div id="Mendoza">
-                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="radio" id="Mendoza" name="provincia" required></div>
                         <div class="provincia"><p>MENDOZA</p></div>
-                        <div><img src="mendoza.jpg"></div>
-                        <div><ul><li>1⁄2 pensión c/ aéreo</li><input type="checkbox" class="pensiones"><li>1⁄2 pensión c/ bus</li><input type="checkbox" class="pensiones"><li>Desayuno s/ traslados</li><input type="checkbox" class="pensiones"></ul></div>
+                        <div class="imagen"><img src="mendoza.jpg"></div>
+                        <div class="listas"><ul><li>1⁄2 pensión c/ aéreo</li><br><li>1⁄2 pensión c/ bus</li><br><li>Desayuno s/ traslados</li></ul></div>
+                        <div class="checksPens"><input type="radio" class="pensiones" name="pensiones" id="medioM" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="busM" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="desayunoM" required></div>
                 </div>
                 <div id="Neuquen">
-                        <div class="check"><input type="checkbox"></div>
+                        <div class="check"><input type="radio" id="Neuquen" name="provincia" required></div>
                         <div class="provincia"><p>NEUQUÉN</p></div>
-                        <div><img src="neuquen.webp"></div>
-                        <div><ul><li>1⁄2 pensión c/ aéreo</li><input type="checkbox" class="pensiones"><li>1⁄2 pensión c/ bus</li><input type="checkbox" class="pensiones"><li>Desayuno s/ traslados</li><input type="checkbox" class="pensiones"></ul></div>
+                        <div class="imagen"><img src="neuquen.webp"></div>
+                        <div class="listas"><ul><li>1⁄2 pensión c/ aéreo</li><br><li>1⁄2 pensión c/ bus</li><br><li>Desayuno s/ traslados</li></ul></div>
+                        <div class="checksPens"><input type="radio" class="pensiones" name="pensiones" id="medioN" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="busN" required>
+                                <input type="radio" class="pensiones" name="pensiones" id="desayunoN" required></div>
                 </div>
                 <div id="form">
-                        <div class="formItem"><p>NOMBRE</p><textarea></textarea></div>
-                        <div class="formItem"><p>APELLIDO</p><textarea></textarea></div>
-                        <div class="formItem"><p>FORMA DE PAGO</p><input type="checkbox"><p>efectivo</p><input type="checkbox"><p>Tarjeta</p></div>
-                        <div><input type="submit" value="ENVIAR" class="submit"></div>
+                        <div class="nombre">NOMBRE<textarea required></textarea></div>
+                        <div class="nombre">APELLIDO<textarea required></textarea></div>
+                        <div class="pago"><p>FORMA DE PAGO</p><div>
+                        <div class="pagos"><input type="radio" required name="pago" id="efectivo"><p>efectivo</p><input type="radio" required name="pago" id="tarjeta"><p>Tarjeta</p></div>
+                        <div class="formItem"><input type="submit" value="ENVIAR" class="submit"></div>
                 </div>
                 </form>
     </div>
