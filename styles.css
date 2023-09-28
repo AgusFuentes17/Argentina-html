@@ -1,12 +1,11 @@
 body{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .container{
-    width: 100%;
     height: 100%;
 }
 
@@ -17,7 +16,7 @@ h1{
     font-size: 90px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    -webkit-text-stroke: 2px orange;
+    -webkit-text-stroke: 1.5px orange;
     text-shadow: 20px 10px 15px rgba(0, 0, 0, 0.568);
     letter-spacing: 15px;
     width: 100%;
@@ -25,7 +24,7 @@ h1{
 
 img{
     height: 75%;
-    border: solid 20px black;
+    border: solid 19px black;
     width: 75%;
 }
 
@@ -74,6 +73,7 @@ img{
 .listas{
     width: 25%;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -83,13 +83,12 @@ img{
 }
 
 .provincia{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-
 
 .imagen{
     width: 15%;
@@ -106,32 +105,55 @@ img{
 
 .nombre{
     display: flex;
-    font-family: sans-serif;
     flex-direction: row;
+    font-family: sans-serif;
+    margin-left: 15%;
 }
 
-#pago{
-    width: 100%;
+.nombre > p{
+    height: 100%;
+    width: 25%;
+    font-size: 20px;
 }
 
 textarea{
-    border: solid 1px #87ba64;
-    height: 20px;
-    width: 15%;
+    border: solid 2px #87ba64;
+    height: 100%;
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
 }
 
-.pagos{
+.pago{
     display: flex;
     flex-direction: row;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.formaPago{
+    margin-right: 20%;
+}
+
+.pago > p{
+    font-size: 20px;
+}
+
+#tarjeta{
+    margin-left: 1%;
 }
 
 .submit{
     margin: auto;
     background-color: black;
     color: white;
+    border: solid 1px black;
     border-radius: 5px;
     height: 35px;
-    width: 100%;
+    width: 10%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -143,4 +165,5 @@ textarea{
     border-left: solid 2px black;
     border-right: solid 2px black;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
